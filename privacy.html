@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AgingBrain MR – Informativa privacy</title>
+<style>
+  /* Layout: una colonna di lettura stretta, intestazione con il nome dell'app e blocchi di testo semplici. */
+  :root {
+    --bg: #f6f8f9;
+    --surface: #ffffff;
+    --fg: #17202a;
+    --muted: #5a6875;
+    --line: #dde4ea;
+    --accent: #0f7a6c;
+    --font-display: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --font-body: "Inter", -apple-system, "Segoe UI", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0e141b; --surface: #16202a; --fg: #e9eef2; --muted: #9aa8b6; --line: #263342; --accent: #3cc7b3;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0e141b; --surface: #16202a; --fg: #e9eef2; --muted: #9aa8b6; --line: #263342; --accent: #3cc7b3;
+    color-scheme: dark;
+  }
+  body {
+    margin: 0;
+    background: var(--bg); color: var(--fg);
+    font: 16px/1.65 var(--font-body);
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  main { max-width: 680px; margin: 0 auto; padding-block: 40px 56px; display: flex; flex-direction: column; gap: 28px; }
+  header { display: flex; flex-direction: column; gap: 6px; }
+  .app { font: 600 13px/1 var(--font-body); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+  h1 { font: 600 clamp(26px, 5vw, 34px)/1.15 var(--font-display); margin: 0; text-wrap: balance; }
+  h2 { font: 600 19px/1.3 var(--font-display); margin: 0 0 6px; }
+  .muted { color: var(--muted); font-size: 14px; margin: 0; }
+  p { margin: 0; }
+  ul { margin: 0; padding-left: 1.2em; display: flex; flex-direction: column; gap: 6px; }
+  .summary { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; font-weight: 500; }
+  .contact { display: flex; flex-direction: column; gap: 2px; }
+  .email { font-weight: 600; color: var(--accent); user-select: all; word-break: break-all; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 4px 0; width: 100%; }
+  a { color: var(--accent); }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600&display=swap">
+
+</head>
+<body>
+<main>
+  <header>
+    <a class="app" href="./" style="text-decoration:none">AgingBrain MR</a>
+    <h1>Informativa privacy</h1>
+    <p class="muted">Ultimo aggiornamento: 24 novembre 2026</p>
+  </header>
+
+  <p class="summary">AgingBrain MR non raccoglie, non salva e non trasmette dati personali o clinici.</p>
+
+  <section>
+    <h2>Dati trattati dall'app</h2>
+    <ul>
+      <li>L'app non richiede registrazione né accesso con account.</li>
+      <li>Età, sesso e punteggi inseriti restano nella memoria del dispositivo solo durante l'uso e si azzerano con "Nuovo studio" o alla chiusura dell'app.</li>
+      <li>L'unica informazione conservata sul dispositivo è l'avvenuta accettazione delle avvertenze iniziali.</li>
+      <li>Il testo del referto viene copiato o condiviso solo su tua iniziativa, con le app che scegli tu.</li>
+      <li>L'app non usa servizi di analisi, tracciamento o pubblicità e non richiede permessi (fotocamera, posizione, contatti).</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Versione beta (TestFlight)</h2>
+    <p>Durante il test tramite TestFlight, Apple può raccogliere dati di utilizzo e i commenti che invii volontariamente, secondo la propria informativa. Questi dati sono gestiti da Apple e condivisi con lo sviluppatore solo nella forma prevista da TestFlight.</p>
+  </section>
+
+  <section class="contact">
+    <h2>Titolare e contatti</h2>
+    <p>Luigi Bozzao</p>
+    <p class="email">luigibozzaomail@gmail.com</p>
+  </section>
+
+  <hr>
+
+  <section lang="en">
+    <h2>Privacy policy (English)</h2>
+    <p>AgingBrain MR does not collect, store or transmit any personal or clinical data. It requires no account, uses no analytics, tracking or advertising, and requests no device permissions. Values entered stay in memory only while the app is in use and are cleared with "Nuovo studio" (New study). During TestFlight testing, Apple may collect usage data and feedback you choose to send, under Apple's own privacy policy.</p>
+    <p style="margin-top: 8px">Contact: Luigi Bozzao, <span class="email">luigibozzaomail@gmail.com</span></p>
+  </section>
+</main>
+
+</body>
+</html>
